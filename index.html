@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eléctrica Dos Hermanos · Material eléctrico, ferretería y plomería desde 1992</title>
+<meta name="description" content="Material eléctrico, iluminación, ferretería y plomería en Mazatlán, Culiacán, San José del Cabo y Cabo San Lucas. Manda tu lista y te la cotizamos por WhatsApp. Entrega gratis en tu ciudad.">
+<meta name="theme-color" content="#0B5CAD">
+<meta property="og:title" content="Eléctrica Dos Hermanos · De nuestro mostrador a tu obra">
+<meta property="og:description" content="6 sucursales en Sinaloa y Los Cabos. Manda tu lista y te la cotizamos hoy.">
+<meta property="og:image" content="img/01-hero.jpg">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<!--
+  FOTOS — colócalas en la carpeta img/ con estos nombres exactos. Si falta alguna, el sitio muestra su espacio marcado.
+  logo-e2h.png / logo-e2h-mark.png / favicon ... YA INCLUIDOS (recortados del logo que nos pasaron; pedir vector para versión final)
+  01-hero.jpg ............. 16:9  electricista en obra frente al mar
+  02-entrega-obra.jpg ..... 16:9  pickup descargando material en obra
+  03-contratistas.jpg ..... 16:9  manos con libreta de lista y celular
+  cat-cable.jpg ........... 1:1   (04) rollos de cable
+  cat-proteccion.jpg ...... 1:1   (05) centro de carga
+  cat-iluminacion.jpg ..... 1:1   (06) LED
+  cat-canalizacion.jpg .... 1:1   (07) conduit
+  cat-plomeria.jpg ........ 1:1   (08) PVC y llaves
+  cat-herramienta.jpg ..... 1:1   (09) herramienta
+  cat-solar.jpg ........... 1:1   (10) panel solar
+  cat-ventilacion.jpg ..... 1:1   (11) abanico de techo
+  12-centro-tecnico.jpg ... 16:9  tablero eléctrico
+  13-solar.jpg ............ 16:9  casa en Los Cabos con paneles
+  real-mostrador.jpg ...... foto REAL del mostrador y equipo E2H
+  suc-matriz.jpg, suc-valle.jpg, suc-atlantico.jpg, suc-culiacan.jpg, suc-sjc.jpg, suc-csl.jpg  fachadas REALES
+-->
+<style>
+:root{
+  --azul:#0B5CAD;
+  --azul-hondo:#08447F;
+  --marino:#0A2342;
+  --amarillo:#FFC414;
+  --concreto:#E6E7E3;
+  --concreto-2:#D5D7D2;
+  --gris:#5B6570;
+  --blanco:#FFFFFF;
+  --panel:#2A2E33;
+  --ok:#2FBF71;
+  --display:'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --body:'Barlow', system-ui, sans-serif;
+  --max:1200px;
+  --corte:4vw;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:17px;line-height:1.55;color:var(--marino);background:var(--blanco);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--amarillo);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:-.005em}
+h2{font-size:clamp(2.2rem,4.4vw,3.4rem);margin-bottom:.4em}
+h3{font-size:1.5rem;line-height:1.1}
+.lead{font-size:1.15rem;max-width:58ch;color:var(--gris)}
+section{padding:96px 0;scroll-margin-top:72px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--display);font-weight:600;font-size:1.2rem;letter-spacing:.01em;padding:.7em 1.3em;border:0;cursor:pointer;text-decoration:none;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:background .15s,color .15s}
+.btn svg{width:1.1em;height:1.1em;flex:none}
+.btn-amarillo{background:var(--amarillo);color:var(--marino)}
+.btn-amarillo:hover{background:#ffd34d}
+.btn-azul{background:var(--azul);color:#fff}
+.btn-azul:hover{background:var(--azul-hondo)}
+.btn-linea{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor;clip-path:none}
+.btn-linea:hover{background:rgba(255,255,255,.12)}
+
+/* Espacios de foto */
+.slot{position:relative;background:var(--concreto-2);overflow:hidden}
+.slot img{width:100%;height:100%;object-fit:cover}
+.slot.vacio img{display:none}
+.slot.vacio::after{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;font-family:var(--display);font-weight:600;font-size:1rem;color:var(--gris);background:repeating-linear-gradient(-45deg,var(--concreto) 0 14px,var(--concreto-2) 14px 28px)}
+
+/* Encabezado */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--concreto-2)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.logo img{height:56px;width:auto}
+.logo .nombre{font-family:var(--display);font-style:italic;font-weight:700;font-size:1.15rem;line-height:.95;color:#1b1b1b}
+.logo.sin-img .nombre{display:none}
+.logo .marca{display:none;font-family:var(--display);line-height:.9}
+.logo.sin-img img{display:none}
+.logo.sin-img .marca{display:block}
+.marca b{display:block;font-size:1.9rem;color:var(--azul);letter-spacing:.02em}
+.marca small{font-size:.8rem;font-weight:600;color:var(--marino)}
+.nav{display:flex;gap:22px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;font-size:.98rem;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:var(--amarillo)}
+.idioma{background:none;border:1px solid var(--concreto-2);padding:6px 10px;font-weight:600;font-size:.85rem;cursor:pointer}
+.top .btn{font-size:1.05rem;padding:.55em 1.1em}
+.lista-cuenta{display:inline-grid;place-items:center;min-width:1.5em;height:1.5em;background:var(--marino);color:var(--amarillo);font-size:.85em;border-radius:99px;padding:0 .35em}
+.menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+
+/* Hero */
+.hero{position:relative;background:var(--azul);color:#fff;padding:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;min-height:560px}
+.hero-texto{padding:84px 48px 140px max(24px,calc((100vw - var(--max))/2 + 24px));position:relative;z-index:2}
+.hero h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.92;margin-bottom:24px}
+.hero p{font-size:1.2rem;max-width:34ch;color:#DCE8F5;margin-bottom:32px}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:14px}
+.hero-foto{position:relative;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
+.hero-foto.slot{background:var(--azul-hondo)}
+.hero-foto.slot.vacio::after{padding-left:22%;background:repeating-linear-gradient(-45deg,#0d66bf 0 14px,#0b5aa9 14px 28px);color:#cfe0f2}
+
+/* Tablero de sucursales: el centro de carga */
+.tablero-wrap{position:relative;z-index:3;margin-top:-96px}
+.tablero{background:var(--panel);color:#fff;padding:22px 26px 26px;box-shadow:0 30px 60px -30px rgba(10,35,66,.6);border-top:6px solid var(--amarillo)}
+.tablero-cab{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.tablero-cab h2{font-size:1.7rem;margin:0}
+.tablero-cab p{color:#B7BEC6;font-size:.95rem}
+.reloj{font-family:var(--display);font-size:1.3rem;color:var(--amarillo)}
+.pastillas{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.pastilla{background:#1E2125;border:1px solid #3a3f45;padding:14px 12px 12px;text-align:left;cursor:pointer;color:#fff;display:flex;flex-direction:column;gap:10px;transition:border-color .15s}
+.pastilla:hover{border-color:var(--amarillo)}
+.palanca{width:36px;height:58px;background:#111316;border-radius:4px;position:relative;margin-bottom:2px;box-shadow:inset 0 2px 4px rgba(0,0,0,.6)}
+.palanca::before{content:"";position:absolute;left:5px;right:5px;height:26px;border-radius:3px;background:#6c737b;top:27px;transition:top .25s cubic-bezier(.5,1.6,.5,1),background .2s}
+.pastilla.on .palanca::before{top:5px;background:var(--amarillo)}
+.pastilla b{font-family:var(--display);font-size:1.2rem;line-height:1}
+.pastilla span{font-size:.82rem;color:#AEB6BF;line-height:1.25}
+.pastilla .estado{color:#AEB6BF}
+.pastilla.on .estado{color:var(--amarillo)}
+.tablero-nota{margin-top:14px;font-size:.8rem;color:#8d959e}
+
+/* Promesas */
+.promesas{padding:56px 0 24px}
+.promesas .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.promesa{padding:8px 28px;border-left:3px solid var(--amarillo)}
+.promesa strong{display:block;font-family:var(--display);font-size:2rem;line-height:1;color:var(--azul);margin-bottom:6px}
+.promesa p{color:var(--gris);font-size:1rem;max-width:30ch}
+
+/* Catálogo */
+.catalogo{background:var(--concreto)}
+.cat-cab{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.buscador{display:flex;align-items:center;background:#fff;border:2px solid var(--marino);min-width:min(420px,100%)}
+.buscador svg{width:22px;margin:0 10px 0 14px;flex:none;color:var(--gris)}
+.buscador input{border:0;outline:0;padding:14px 14px 14px 0;width:100%;font-size:1.05rem;background:none}
+.categorias{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-bottom:28px}
+.cat{background:#fff;border:2px solid transparent;cursor:pointer;padding:0;text-align:left;display:flex;flex-direction:column}
+.cat .slot{aspect-ratio:1}
+.cat .slot.vacio::after{font-size:.8rem}
+.cat span{font-family:var(--display);font-weight:600;font-size:1.08rem;padding:8px 10px 10px;line-height:1.05}
+.cat[aria-pressed="true"]{border-color:var(--azul);background:var(--azul);color:#fff}
+.productos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:2px;background:var(--concreto-2);border:2px solid var(--concreto-2)}
+.prod{background:#fff;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.prod h3{font-family:var(--body);font-weight:600;font-size:1rem;line-height:1.3}
+.prod small{color:var(--gris);font-size:.85rem}
+.agregar{flex:none;width:40px;height:40px;border:2px solid var(--azul);background:#fff;color:var(--azul);font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+.agregar:hover{background:var(--azul);color:#fff}
+.agregar.en-lista{background:var(--azul);color:#fff}
+.sin-resultados{background:#fff;padding:28px;grid-column:1/-1}
+.cat-pie{margin-top:18px;color:var(--gris);font-size:.95rem}
+
+/* Cotizador */
+.cotizar .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start}
+.pasos{list-style:none;counter-reset:p;margin:28px 0 32px}
+.pasos li{counter-increment:p;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--concreto-2)}
+.pasos li::before{content:counter(p);font-family:var(--display);font-weight:700;font-size:2rem;color:var(--azul);line-height:1}
+.cotizar .slot{aspect-ratio:16/9}
+.form{background:var(--concreto);padding:32px;border-top:6px solid var(--azul)}
+.form h3{margin-bottom:14px}
+.campo{margin-bottom:16px}
+fieldset.campo{border:0;min-width:0}
+.campo label,.campo legend{display:block;font-weight:600;font-size:.95rem;margin-bottom:6px}
+.campo input,.campo select,.campo textarea{width:100%;padding:12px 14px;border:1px solid #b9bdb7;background:#fff;border-radius:0}
+.campo textarea{min-height:120px;resize:vertical}
+.fila{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.opciones{display:flex;gap:8px;flex-wrap:wrap;border:0}
+.opciones label{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #b9bdb7;padding:10px 14px;cursor:pointer;font-weight:500;margin:0}
+.opciones input{width:auto;accent-color:var(--azul)}
+.mi-lista{background:#fff;border:1px solid #b9bdb7;margin-bottom:16px}
+.mi-lista ul{list-style:none;max-height:240px;overflow:auto}
+.mi-lista li{display:grid;grid-template-columns:1fr 84px 32px;gap:10px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--concreto)}
+.mi-lista li input{padding:6px 8px;border:1px solid #b9bdb7;width:100%}
+.mi-lista li button{border:0;background:none;cursor:pointer;font-size:1.3rem;color:var(--gris)}
+.mi-lista .vacia{padding:14px;color:var(--gris);font-size:.95rem}
+.archivo{font-size:.9rem;color:var(--gris);margin-top:6px}
+.envio{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.aviso-ok{margin-top:14px;font-weight:600;color:var(--azul-hondo)}
+.repetir{background:none;border:0;color:var(--azul);font-weight:600;cursor:pointer;text-decoration:underline;padding:0;margin-bottom:12px}
+
+/* Contratistas */
+.contratistas{background:var(--marino);color:#fff;position:relative}
+.contratistas .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.contratistas .lead{color:#B9C6D6}
+.beneficios{list-style:none;margin:28px 0 32px;display:grid;gap:18px}
+.beneficios li{padding-left:22px;position:relative}
+.beneficios li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;background:var(--amarillo);transform:skewX(-18deg)}
+.beneficios b{display:block;font-family:var(--display);font-size:1.35rem;font-weight:600}
+.beneficios span{color:#B9C6D6}
+.contratistas .slot{aspect-ratio:4/3;clip-path:polygon(12% 0,100% 0,100% 100%,0 100%)}
+.contratistas .slot.vacio::after{padding-left:16%;background:repeating-linear-gradient(-45deg,#12305a 0 14px,#0e2a4e 14px 28px);color:#93a6bf}
+
+/* Herramientas */
+.herr-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}
+.herr{border:2px solid var(--marino);padding:28px}
+.herr h3{margin-bottom:6px}
+.herr > p{color:var(--gris);margin-bottom:20px}
+.resultado{margin-top:18px;background:var(--marino);color:#fff;padding:18px 20px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.resultado .num{font-family:var(--display);font-weight:700;font-size:2.6rem;line-height:1;color:var(--amarillo)}
+.resultado p{font-size:.95rem;color:#C9D3DF;flex:1;min-width:200px}
+.letra-chica{font-size:.82rem;color:var(--gris);margin-top:12px}
+.herr-fotos{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+.herr-fotos .slot{aspect-ratio:16/9}
+
+/* Sucursales */
+.sucursales{background:var(--concreto)}
+.ciudades{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}
+.ciudades button{border:2px solid var(--marino);background:transparent;padding:8px 16px;font-family:var(--display);font-weight:600;font-size:1.15rem;cursor:pointer}
+.ciudades button[aria-selected="true"]{background:var(--marino);color:#fff}
+.cercana{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+.cercana p{color:var(--gris)}
+.suc-lista{display:grid;gap:20px}
+.suc{display:grid;grid-template-columns:220px minmax(0,1fr) minmax(0,1.2fr);background:#fff;min-height:240px}
+.suc.destacada{outline:4px solid var(--amarillo)}
+.suc .slot{min-height:200px}
+.suc-info{padding:24px;min-width:0;overflow-wrap:anywhere}
+.suc-info h3{font-size:1.8rem;margin-bottom:4px}
+.suc-estado{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.92rem;margin-bottom:12px}
+.suc-estado i{width:10px;height:10px;border-radius:50%;background:#aab1b8}
+.suc-estado.abierto i{background:var(--ok);box-shadow:0 0 0 4px rgba(47,191,113,.2)}
+.suc-info address{font-style:normal;color:var(--gris);margin-bottom:12px}
+.suc-info .tels a{display:block;font-weight:600;text-decoration:none}
+.suc-info .tels a:hover{text-decoration:underline}
+.suc-acc{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.suc-acc .btn{font-size:1.02rem;padding:.5em 1em}
+.suc-mapa{min-height:240px;background:var(--concreto-2)}
+.suc-mapa iframe{width:100%;height:100%;min-height:240px;border:0;display:block}
+.distancia{font-size:.9rem;color:var(--azul);font-weight:600}
+
+/* Historia */
+.linea{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);margin-top:40px;position:relative}
+.linea::before{content:"";position:absolute;left:0;right:0;top:22px;height:4px;background:var(--azul)}
+.linea li{position:relative;padding-right:22px}
+.linea .punto{width:48px;height:48px;background:var(--amarillo);border:4px solid #fff;outline:4px solid var(--azul);display:grid;place-items:center;margin-bottom:18px;position:relative;transform:skewX(-12deg)}
+.linea .anio{font-family:var(--display);font-weight:700;font-size:1.7rem;color:var(--azul);display:block;min-height:1.1em}
+.linea p{color:var(--gris);font-size:.98rem}
+.historia-foto{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;margin-top:64px}
+.historia-foto .slot{aspect-ratio:3/2}
+.historia-foto blockquote{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.08;font-weight:600}
+.historia-foto cite{display:block;font-family:var(--body);font-style:normal;font-size:1rem;color:var(--gris);margin-top:14px;font-weight:400}
+
+/* Marcas */
+.marcas{padding:56px 0;border-top:1px solid var(--concreto-2);border-bottom:1px solid var(--concreto-2);overflow:hidden}
+.marcas h2{font-size:1.6rem;margin-bottom:18px}
+.marcas ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px 30px}
+.marcas li{font-family:var(--display);font-weight:600;font-size:1.5rem;color:#8a929b}
+
+/* Pie */
+.pie{background:var(--marino);color:#C4CFDC;padding:64px 0 120px;font-size:.95rem}
+.pie .wrap{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:36px}
+.pie h3{color:#fff;font-size:1.3rem;margin-bottom:10px}
+.pie ul{list-style:none;display:grid;gap:6px}
+.pie a{text-decoration:none}
+.pie a:hover{color:var(--amarillo)}
+.pie .legal{grid-column:1/-1;border-top:1px solid #23406a;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#8ea1b8;font-size:.85rem}
+
+/* Barra móvil */
+.barra-movil{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--marino);grid-template-columns:repeat(3,1fr);border-top:3px solid var(--amarillo)}
+.barra-movil a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px 12px;color:#fff;text-decoration:none;font-weight:600;font-size:.82rem}
+.barra-movil svg{width:22px;height:22px;color:var(--amarillo)}
+
+/* Lista flotante */
+.flotante{position:fixed;right:20px;bottom:20px;z-index:55;display:none}
+.flotante.visible{display:block}
+
+@media (max-width:1060px){
+  .categorias{grid-template-columns:repeat(4,1fr)}
+  .pastillas{grid-template-columns:repeat(3,1fr)}
+  .suc{grid-template-columns:1fr 1fr}
+  .suc .slot{display:none}
+  .linea{grid-template-columns:1fr;gap:6px}
+  .linea::before{left:22px;right:auto;top:0;bottom:0;width:4px;height:auto}
+  .linea li{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:0 0 20px}
+  .linea .punto{margin:0}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .nav,.top .btn,.idioma.escritorio{display:none}
+  .menu-btn{display:block;margin-left:auto}
+  .nav.abierto{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#fff;padding:16px 24px 24px;gap:8px;border-bottom:1px solid var(--concreto-2)}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-texto{padding:56px 24px 40px}
+  .hero-foto{clip-path:polygon(0 12%,100% 0,100% 100%,0 100%);aspect-ratio:16/10}
+  .tablero-wrap{margin-top:-40px}
+  .pastillas{grid-template-columns:repeat(2,1fr)}
+  .promesas .wrap{grid-template-columns:1fr;gap:18px}
+  .cotizar .wrap,.contratistas .wrap,.herr-grid,.herr-fotos,.historia-foto{grid-template-columns:1fr}
+  .suc{grid-template-columns:minmax(0,1fr)}
+  .fila{grid-template-columns:1fr}
+  .pie .wrap{grid-template-columns:1fr 1fr}
+  .barra-movil{display:grid}
+  .flotante{bottom:84px}
+}
+@media (max-width:520px){
+  .categorias{grid-template-columns:repeat(2,1fr)}
+  .form{padding:22px}
+  .pie .wrap{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#inicio" class="logo" id="logo" aria-label="Eléctrica Dos Hermanos, inicio">
+      <img src="img/logo-e2h-mark.png" alt="" width="58" height="62">
+      <span class="marca"><b>E2H</b><small>Eléctrica Dos Hermanos</small></span>
+      <span class="nombre">Eléctrica<br>Dos Hermanos</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#catalogo" data-i18n="nav.productos">Productos</a>
+      <a href="#cotizar" data-i18n="nav.cotizar">Cotizar</a>
+      <a href="#contratistas" data-i18n="nav.contratistas">Contratistas</a>
+      <a href="#herramientas" data-i18n="nav.herramientas">Calculadoras</a>
+      <a href="#sucursales" data-i18n="nav.sucursales">Sucursales</a>
+      <a href="#historia" data-i18n="nav.historia">Nosotros</a>
+    </nav>
+    <button class="idioma escritorio" id="idioma" type="button" aria-label="Cambiar idioma">EN</button>
+    <a href="#cotizar" class="btn btn-amarillo"><span data-i18n="cta.lista">Manda tu lista</span> <span class="lista-cuenta" data-cuenta>0</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero" aria-labelledby="titulo">
+  <div class="hero-grid">
+    <div class="hero-texto">
+      <h1 id="titulo" data-i18n="hero.titulo">De nuestro mostrador a tu obra.</h1>
+      <p data-i18n="hero.sub">Material eléctrico, iluminación, ferretería y plomería desde 1992. Manda tu lista por WhatsApp y te la cotizamos hoy, con entrega gratis en tu ciudad.</p>
+      <div class="acciones">
+        <a href="#cotizar" class="btn btn-amarillo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5h10M9 12h10M9 19h10M4 5h.01M4 12h.01M4 19h.01"/></svg><span data-i18n="cta.lista">Manda tu lista</span></a>
+        <a href="#sucursales" class="btn btn-linea" data-cercana-btn><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span data-i18n="cta.cercana">Sucursal más cercana</span></a>
+      </div>
+    </div>
+    <div class="hero-foto slot" data-label="Foto 01 · Hero 16:9 — electricista en obra frente al mar">
+      <img src="img/01-hero.jpg" alt="Electricista instalando cable en una obra frente al mar">
+    </div>
+  </div>
+</section>
+
+<div class="wrap tablero-wrap">
+  <div class="tablero" aria-labelledby="tableroTit">
+    <div class="tablero-cab">
+      <div>
+        <h2 id="tableroTit" data-i18n="tablero.titulo">Nuestras sucursales, ahora mismo</h2>
+        <p id="tableroResumen">—</p>
+      </div>
+      <span class="reloj" id="reloj" aria-live="off">--:--</span>
+    </div>
+    <div class="pastillas" id="pastillas"></div>
+  </div>
+</div>
+
+<div class="promesas">
+  <div class="wrap">
+    <div class="promesa"><strong id="anios">34 años</strong><p data-i18n="promesa.1">Atendiendo electricistas, contratistas y hogares desde 1992 en Mazatlán.</p></div>
+    <div class="promesa"><strong data-i18n="promesa.2t">Entrega gratis</strong><p data-i18n="promesa.2">Te llevamos el material a la obra o a tu casa dentro de la ciudad, en unas 24 horas.</p></div>
+    <div class="promesa"><strong data-i18n="promesa.3t">Cotización hoy</strong><p data-i18n="promesa.3">Mándanos la lista, la foto de tu libreta o tu Excel. Te contesta alguien que sabe.</p></div>
+  </div>
+</div>
+
+<section class="catalogo" id="catalogo" aria-labelledby="catTit">
+  <div class="wrap">
+    <div class="cat-cab">
+      <div>
+        <h2 id="catTit" data-i18n="cat.titulo">Lo que encuentras en el mostrador</h2>
+        <p class="lead" data-i18n="cat.lead">Agrega lo que necesitas a tu lista y te mandamos precio y existencia por WhatsApp.</p>
+      </div>
+      <label class="buscador">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span class="sr" hidden>Buscar</span>
+        <input type="search" id="buscar" placeholder="Busca: cable 12, centro de carga, foco LED…" data-i18n-ph="cat.buscar" autocomplete="off">
+      </label>
+    </div>
+    <div class="categorias" id="categorias" role="group" aria-label="Categorías"></div>
+    <div class="productos" id="productos" aria-live="polite"></div>
+    <p class="cat-pie" data-i18n="cat.pie">¿No está en la lista? Escríbelo en tu cotización: manejamos miles de productos en baja y alta tensión.</p>
+  </div>
+</section>
+
+<section class="cotizar" id="cotizar" aria-labelledby="cotTit">
+  <div class="wrap">
+    <div>
+      <h2 id="cotTit" data-i18n="cot.titulo">Manda tu lista. Te la cotizamos hoy.</h2>
+      <p class="lead" data-i18n="cot.lead">Así trabajamos en el mostrador desde hace 34 años, ahora desde tu celular.</p>
+      <ol class="pasos">
+        <li><div><b data-i18n="cot.p1t">Arma tu lista</b><br><span data-i18n="cot.p1">Desde el catálogo, escribiéndola o con foto de tu libreta.</span></div></li>
+        <li><div><b data-i18n="cot.p2t">Elige tu sucursal</b><br><span data-i18n="cot.p2">La que te quede más cerca o la que siempre te atiende.</span></div></li>
+        <li><div><b data-i18n="cot.p3t">Recibe tu cotización</b><br><span data-i18n="cot.p3">Por WhatsApp o correo, con existencias y tiempo de entrega.</span></div></li>
+      </ol>
+      <div class="slot" data-label="Foto 03 · Contratistas 16:9 — libreta de lista y celular">
+        <img src="img/03-contratistas.jpg" alt="Lista de material escrita a mano junto a un celular en la obra">
+      </div>
+    </div>
+
+    <form class="form" id="formCot" novalidate>
+      <h3 data-i18n="cot.form">Tu cotización</h3>
+      <button type="button" class="repetir" id="repetir" hidden data-i18n="cot.repetir">Repetir mi última lista</button>
+      <div class="campo">
+        <label data-i18n="cot.milista">Mi lista</label>
+        <div class="mi-lista"><ul id="miLista"></ul></div>
+      </div>
+      <div class="campo">
+        <label for="libre" data-i18n="cot.libre">¿Algo más? Escríbelo o pega tu lista</label>
+        <textarea id="libre" placeholder="Ej. 3 rollos THW cal. 12 rojo, 20 chalupas, 1 centro de carga 8 polos…" data-i18n-ph="cot.libreph"></textarea>
+      </div>
+      <div class="campo">
+        <label for="archivo" data-i18n="cot.archivo">Foto de tu libreta o Excel (opcional)</label>
+        <input type="file" id="archivo" accept="image/*,.xls,.xlsx,.csv,.pdf">
+        <p class="archivo" id="archivoNota" hidden></p>
+      </div>
+      <div class="fila">
+        <div class="campo">
+          <label for="sucursal" data-i18n="cot.sucursal">Sucursal</label>
+          <select id="sucursal" required></select>
+        </div>
+        <div class="campo">
+          <label for="nombre" data-i18n="cot.nombre">Tu nombre</label>
+          <input id="nombre" autocomplete="name" required>
+        </div>
+      </div>
+      <fieldset class="campo">
+        <legend data-i18n="cot.eres">Eres</legend>
+        <div class="opciones">
+          <label><input type="radio" name="tipo" value="Electricista / plomero" checked> <span data-i18n="cot.t1">Electricista o plomero</span></label>
+          <label><input type="radio" name="tipo" value="Contratista / empresa"> <span data-i18n="cot.t2">Contratista o empresa</span></label>
+          <label><input type="radio" name="tipo" value="Hogar / negocio"> <span data-i18n="cot.t3">Hogar o negocio</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="campo">
+        <legend data-i18n="cot.entrega">Entrega</legend>
+        <div class="opciones">
+          <label><input type="radio" name="entrega" value="Paso a recoger" checked> <span data-i18n="cot.e1">Paso a recoger</span></label>
+          <label><input type="radio" name="entrega" value="Entrega a domicilio / obra"> <span data-i18n="cot.e2">Llévenmelo a la obra</span></label>
+        </div>
+      </fieldset>
+      <div class="campo" id="campoDir" hidden>
+        <label for="direccion" data-i18n="cot.dir">Colonia o ubicación de la obra</label>
+        <input id="direccion">
+      </div>
+      <div class="envio">
+        <button type="submit" class="btn btn-azul" data-via="wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg><span data-i18n="cot.enviarWa">Enviar por WhatsApp</span></button>
+        <button type="submit" class="btn btn-linea" data-via="mail" data-i18n="cot.enviarMail">Enviar por correo</button>
+      </div>
+      <p class="aviso-ok" id="avisoOk" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+
+<section class="contratistas" id="contratistas" aria-labelledby="conTit">
+  <div class="wrap">
+    <div>
+      <h2 id="conTit" data-i18n="con.titulo">Para la obra que no puede parar</h2>
+      <p class="lead" data-i18n="con.lead">Torres, vivienda, hoteles y mantenimiento. Un solo proveedor en Mazatlán, Culiacán y Los Cabos.</p>
+      <ul class="beneficios">
+        <li><b data-i18n="con.b1t">Entrega en obra</b><span data-i18n="con.b1">Material directo al frente de trabajo, sin costo dentro de la ciudad.</span></li>
+        <li><b data-i18n="con.b2t">Cotización por volumen</b><span data-i18n="con.b2">Mándanos el catálogo de conceptos o la lista de la obra completa.</span></li>
+        <li><b data-i18n="con.b3t">Asesoría desde el proyecto</b><span data-i18n="con.b3">Te ayudamos a elegir material antes de instalar, para evitar retrabajos y costos extra.</span></li>
+        <li><b data-i18n="con.b4t">Factura y envíos nacionales</b><span data-i18n="con.b4">Facturamos y enviamos a todo el país por la paquetería que prefieras.</span></li>
+      </ul>
+      <a class="btn btn-amarillo" id="cuentaEmp" href="#" data-i18n="con.cta">Abrir cuenta de empresa</a>
+    </div>
+    <div class="slot" data-label="Foto 02 · Entrega en obra 16:9 — pickup descargando material">
+      <img src="img/02-entrega-obra.jpg" alt="Camioneta descargando rollos de cable y tubería en una obra">
+    </div>
+  </div>
+</section>
+
+<section class="herramientas" id="herramientas" aria-labelledby="herTit">
+  <div class="wrap">
+    <h2 id="herTit" data-i18n="her.titulo">Calcula antes de comprar</h2>
+    <p class="lead" data-i18n="her.lead">Dos cuentas que nos piden todos los días en el mostrador. Son una referencia rápida; para la instalación final, confirma con tu electricista.</p>
+    <div class="herr-grid">
+      <div class="herr">
+        <h3 data-i18n="cal.titulo">¿Qué calibre de cable necesito?</h3>
+        <p data-i18n="cal.lead">Cable de cobre, circuito monofásico, caída de tensión máxima del 3%.</p>
+        <div class="fila">
+          <div class="campo"><label for="calCarga" data-i18n="cal.carga">Carga (watts)</label><input id="calCarga" type="number" min="1" value="3000" inputmode="numeric"></div>
+          <div class="campo"><label for="calDist" data-i18n="cal.dist">Distancia (metros)</label><input id="calDist" type="number" min="1" value="25" inputmode="numeric"></div>
+        </div>
+        <div class="campo"><label for="calVolt" data-i18n="cal.volt">Voltaje</label>
+          <select id="calVolt"><option value="127">127 V</option><option value="220">220 V</option></select></div>
+        <div class="resultado"><span class="num" id="calRes">—</span><p id="calTxt"></p></div>
+        <button type="button" class="btn btn-azul" id="calAgregar" style="margin-top:14px" data-i18n="cal.agregar">Agregar este cable a mi lista</button>
+        <p class="letra-chica" data-i18n="cal.nota">Referencia con conductor THW a 75 °C. Verifica con la NOM-001-SEDE y con un profesional.</p>
+      </div>
+      <div class="herr">
+        <h3 data-i18n="led.titulo">¿Cuánto ahorro si cambio a LED?</h3>
+        <p data-i18n="led.lead">Compara tus focos actuales contra LED equivalentes.</p>
+        <div class="fila">
+          <div class="campo"><label for="ledN" data-i18n="led.n">Número de focos</label><input id="ledN" type="number" min="1" value="20"></div>
+          <div class="campo"><label for="ledH" data-i18n="led.h">Horas al día</label><input id="ledH" type="number" min="1" max="24" value="6"></div>
+        </div>
+        <div class="fila">
+          <div class="campo"><label for="ledW" data-i18n="led.w">Watts del foco actual</label>
+            <select id="ledW"><option value="60|9">60 W → LED 9 W</option><option value="100|14">100 W → LED 14 W</option><option value="23|9">Ahorrador 23 W → LED 9 W</option><option value="250|100">Reflector 250 W → LED 100 W</option></select></div>
+          <div class="campo"><label for="ledT" data-i18n="led.t">Tarifa ($ por kWh)</label><input id="ledT" type="number" step="0.1" min="0.1" value="3.5"></div>
+        </div>
+        <div class="resultado"><span class="num" id="ledRes">—</span><p id="ledTxt"></p></div>
+        <p class="letra-chica" data-i18n="led.nota">Tu tarifa exacta viene en tu recibo de CFE. En tarifa DAC el ahorro es mayor.</p>
+      </div>
+    </div>
+    <div class="herr-fotos">
+      <div class="slot" data-label="Foto 12 · Centro técnico 16:9 — tablero eléctrico"><img src="img/12-centro-tecnico.jpg" alt="Tablero eléctrico ordenado"></div>
+      <div class="slot" data-label="Foto 13 · Solar 16:9 — casa en Los Cabos con paneles"><img src="img/13-solar.jpg" alt="Casa en Los Cabos con paneles solares"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sucursales" id="sucursales" aria-labelledby="sucTit">
+  <div class="wrap">
+    <h2 id="sucTit" data-i18n="suc.titulo">6 sucursales, la misma forma de atender</h2>
+    <div class="cercana">
+      <button type="button" class="btn btn-azul" id="btnCercana" data-i18n="suc.cercana">Encontrar la más cercana</button>
+      <p id="cercanaTxt" data-i18n="suc.cercanaTxt">Usamos tu ubicación solo para calcular la distancia; no la guardamos.</p>
+    </div>
+    <div class="ciudades" role="tablist" id="ciudades"></div>
+    <div class="suc-lista" id="sucLista"></div>
+  </div>
+</section>
+
+<section class="historia" id="historia" aria-labelledby="hisTit">
+  <div class="wrap">
+    <h2 id="hisTit" data-i18n="his.titulo">Desde 1992, creciendo con la región</h2>
+    <p class="lead" data-i18n="his.lead">Empezamos con un mostrador en Mazatlán. Hoy surtimos obras en dos estados, con el mismo trato.</p>
+    <ol class="linea">
+      <li><span class="punto"></span><div><span class="anio">1992</span><p data-i18n="his.1">Abrimos en División del Norte, Mazatlán.</p></div></li>
+      <li><span class="punto"></span><div><span class="anio" data-anio="cabos"></span><p data-i18n="his.2">Llegamos a Baja California Sur: San José del Cabo y Cabo San Lucas.</p></div></li>
+      <li><span class="punto"></span><div><span class="anio" data-anio="culiacan"></span><p data-i18n="his.3">Abrimos Culiacán.</p></div></li>
+      <li><span class="punto"></span><div><span class="anio" data-anio="mzt"></span><p data-i18n="his.4">Crecemos en Mazatlán con Valle y Atlántico.</p></div></li>
+      <li><span class="punto"></span><div><span class="anio">2026</span><p data-i18n="his.5">Tu mostrador también desde el celular.</p></div></li>
+    </ol>
+    <div class="historia-foto">
+      <div class="slot" data-label="Foto REAL · mostrador y equipo E2H"><img src="img/real-mostrador.jpg" alt="Equipo de Eléctrica Dos Hermanos atendiendo en el mostrador"></div>
+      <blockquote><span data-i18n="his.cita">“Servicio, precio y experiencia en un mismo lugar.”</span><cite data-i18n="his.cita2">Lo prometimos en 1992 y lo seguimos cumpliendo en cada mostrador.</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<div class="marcas">
+  <div class="wrap">
+    <h2 data-i18n="marcas.titulo">Marcas que distribuimos</h2>
+    <ul id="marcas"></ul>
+  </div>
+</div>
+
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <div>
+      <h3>Eléctrica Dos Hermanos</h3>
+      <p data-i18n="pie.desc">Material eléctrico, iluminación, ferretería y plomería para tu hogar, negocio u obra. Mayoreo y menudeo desde 1992.</p>
+    </div>
+    <div><h3>Sinaloa</h3><ul id="pieSin"></ul></div>
+    <div><h3>Los Cabos</h3><ul id="pieBcs"></ul></div>
+    <div><h3 data-i18n="pie.sitio">Sitio</h3><ul>
+      <li><a href="#catalogo" data-i18n="nav.productos">Productos</a></li>
+      <li><a href="#cotizar" data-i18n="nav.cotizar">Cotizar</a></li>
+      <li><a href="#contratistas" data-i18n="nav.contratistas">Contratistas</a></li>
+      <li><a href="avisodeprivacidad.html" data-i18n="pie.aviso">Aviso de privacidad</a></li>
+    </ul></div>
+    <div class="legal"><span>© <span id="anioPie">2026</span> Eléctrica Dos Hermanos S.A. de C.V.</span><span data-i18n="pie.propuesta">Propuesta de rediseño · vista previa</span></div>
+  </div>
+</footer>
+
+<nav class="barra-movil" aria-label="Acciones rápidas">
+  <a href="#" id="movWa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>WhatsApp</span></a>
+  <a href="#" id="movTel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-i18n="mov.llamar">Llamar</span></a>
+  <a href="#sucursales"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span data-i18n="mov.sucursal">Sucursal</span></a>
+</nav>
+
+<a href="#cotizar" class="btn btn-amarillo flotante" id="flotante"><span data-i18n="flot.ver">Ver mi lista</span> <span class="lista-cuenta" data-cuenta>0</span></a>
+
+<script>
+/* ================== CONFIGURACIÓN (editar aquí) ================== */
+// whatsapp: número en formato 52 + 10 dígitos. CONFIRMAR con cada sucursal (hoy se usa el primer teléfono como provisional).
+// horario: [día 0=domingo..6=sábado] => [abre, cierra] en hora local. CONFIRMAR horarios reales.
+const HORARIO_BASE = {1:["08:00","18:00"],2:["08:00","18:00"],3:["08:00","18:00"],4:["08:00","18:00"],5:["08:00","18:00"],6:["08:00","14:00"]};
+const ZONA = "America/Mazatlan"; // Sinaloa y BCS comparten hora (UTC-7)
+const SUCURSALES = [
+  {id:"matriz", nombre:"Mazatlán Matriz", corto:"Matriz", ciudad:"Mazatlán", estado:"Sinaloa",
+   dir:"División del Norte 1900, Col. Francisco Villa, 82127 Mazatlán, Sin.", tels:["669 940 7077","669 940 7088"],
+   whatsapp:"526699407077", correo:"cotizaciones.mzt@electricadoshermanos.com", lat:23.2480, lng:-106.4308,
+   mapa:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1832.9324849470593!2d-106.43084136982091!3d23.24800025612486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x144b3fb47cd3ec77!2sEl%C3%A9ctrica+Dos+Hermanos%2C+S.A.+De+C.V.!5e0!3m2!1ses!2smx!4v1419216609403"},
+  {id:"valle", nombre:"Mazatlán Valle", corto:"Valle", ciudad:"Mazatlán", estado:"Sinaloa",
+   dir:"Av. Óscar Pérez Escobosa 2600, Col. Ampliación Valle del Ejido, 82134 Mazatlán, Sin.", tels:["669 917 0011","669 917 0012"],
+   whatsapp:"526699170011", correo:"administracion.valle@electricadoshermanos.com", lat:23.2698, lng:-106.4102,
+   mapa:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.265828994446!2d-106.41018246511229!3d23.2697887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8698ad060be2bf17%3A0x3aba638579b372df!2sElectrica%20Dos%20Hermanos!5e0!3m2!1ses!2smx!4v1782671213073!5m2!1ses!2smx"},
+  {id:"atlantico", nombre:"Mazatlán Atlántico", corto:"Atlántico", ciudad:"Mazatlán", estado:"Sinaloa",
+   dir:"Óscar Pérez Escobosa 6079, Real Pacífico, 82124 Mazatlán, Sin.", tels:["669 442 0708"],
+   whatsapp:"526694420708", correo:"administracion.atl@electricadoshermanos.com", lat:23.2990, lng:-106.4560, /* coordenadas aproximadas: confirmar */
+   mapa:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58638.17465325113!2d-106.5085716783203!3d23.283594699999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8698ad43d3ac21a9%3A0xcdfa3fa1bb7e6e8c!2sElectrica%20Dos%20Hermanos!5e0!3m2!1ses-419!2smx!4v1782762717877!5m2!1ses-419!2smx"},
+  {id:"culiacan", nombre:"Culiacán", corto:"Culiacán", ciudad:"Culiacán", estado:"Sinaloa",
+   dir:"Blvd. Lola Beltrán 4396, Ejido Humaya, 80058 Culiacán, Sin.", tels:["667 723 3271","667 723 3168"],
+   whatsapp:"526677233271", correo:"administracion.cln@electricadoshermanos.com", lat:24.8104, lng:-107.4426,
+   mapa:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.5646625352047!2d-107.44258542378684!3d24.810356247259065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcda826e7a06ad%3A0x37e60c6596b37a38!2sElectrica%20Dos%20Hermanos%20-%20Culiacan!5e0!3m2!1ses!2smx!4v1782671753263!5m2!1ses!2smx"},
+  {id:"sjc", nombre:"San José del Cabo", corto:"San José", ciudad:"Los Cabos", estado:"BCS",
+   dir:"Carretera Transpeninsular, vado Santa Rosa s/n, Santa Rosa, 23400 San José del Cabo, BCS", tels:["624 120 1499","624 120 1399"],
+   whatsapp:"526241201499", correo:"administracion.sjc@electricadoshermanos.com", lat:23.0853, lng:-109.7101,
+   mapa:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.32175960511!2d-109.71011472382104!3d23.085314413982232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5a5e3afbf699%3A0xe46911109dc6645e!2sElectrica%20Dos%20Hermanos!5e0!3m2!1ses!2smx!4v1782671509196!5m2!1ses!2smx"},
+  {id:"csl", nombre:"Cabo San Lucas", corto:"Cabo", ciudad:"Los Cabos", estado:"BCS",
+   dir:"C. Adolfo López Mateos, El Arenal, 23460 Cabo San Lucas, BCS", tels:["624 143 7851","624 143 7852"],
+   whatsapp:"526241437851", correo:"administracion.csl@electricadoshermanos.com", lat:22.9009, lng:-109.9170,
+   mapa:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.337911003991!2d-109.9170015238246!3d22.90090402085599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4af5fa04c497%3A0xfb48b5f8b1354f42!2sEl%C3%A9ctrica%202%20Hermanos!5e0!3m2!1ses!2smx!4v1782671683551!5m2!1ses!2smx"}
+];
+SUCURSALES.forEach(s=>s.horario=HORARIO_BASE);
+
+const CATEGORIAS = [
+  {id:"cable", es:"Cable y conductores", en:"Wire & cable"},
+  {id:"proteccion", es:"Centros de carga y protección", en:"Panels & protection"},
+  {id:"iluminacion", es:"Iluminación LED", en:"LED lighting"},
+  {id:"canalizacion", es:"Tubería y canalización", en:"Conduit & boxes"},
+  {id:"plomeria", es:"Plomería", en:"Plumbing"},
+  {id:"herramienta", es:"Herramienta", en:"Tools"},
+  {id:"solar", es:"Solar y ahorro", en:"Solar & savings"},
+  {id:"ventilacion", es:"Abanicos y ventilación", en:"Fans & ventilation"}
+];
+const PRODUCTOS = [
+  ["cable","Cable THW-LS cal. 14","Rollo 100 m"],["cable","Cable THW-LS cal. 12","Rollo 100 m"],["cable","Cable THW-LS cal. 10","Rollo 100 m"],["cable","Cable THW-LS cal. 8","Rollo 100 m"],["cable","Cable uso rudo 2x12","Por metro"],["cable","Cable desnudo cal. 8 para tierra","Por metro"],
+  ["proteccion","Centro de carga 2 polos","Pieza"],["proteccion","Centro de carga 8 polos","Pieza"],["proteccion","Interruptor termomagnético 1P 20 A","Pieza"],["proteccion","Interruptor termomagnético 2P 30 A","Pieza"],["proteccion","Contacto GFCI 15 A","Pieza"],["proteccion","Supresor de picos para tablero","Pieza"],["proteccion","Varilla de tierra 5/8\" x 3 m","Pieza"],
+  ["iluminacion","Foco LED 9 W luz de día","Pieza"],["iluminacion","Panel LED 60x60 40 W","Pieza"],["iluminacion","Reflector LED 50 W IP65","Pieza"],["iluminacion","Lámpara de empotrar LED 12 W","Pieza"],["iluminacion","Tira LED 5 m","Rollo"],["iluminacion","Arbotante LED para exterior","Pieza"],
+  ["canalizacion","Tubo conduit PVC 1/2\"","Tramo 3 m"],["canalizacion","Tubo conduit galvanizado 3/4\"","Tramo 3 m"],["canalizacion","Poliducto naranja 1/2\"","Rollo 100 m"],["canalizacion","Caja chalupa","Pieza"],["canalizacion","Curva conduit 3/4\"","Pieza"],["canalizacion","Abrazadera tipo uña 1/2\"","Bolsa 100"],
+  ["plomeria","Tubo PVC hidráulico 1/2\"","Tramo 6 m"],["plomeria","Codo de cobre 1/2\" x 90°","Pieza"],["plomeria","Llave de nariz 1/2\"","Pieza"],["plomeria","Válvula de esfera 3/4\"","Pieza"],["plomeria","Cinta teflón","Pieza"],["plomeria","Kit de herrajes para WC","Pieza"],
+  ["herramienta","Pinza de electricista 9\"","Pieza"],["herramienta","Pelacables automático","Pieza"],["herramienta","Multímetro digital","Pieza"],["herramienta","Juego de desarmadores aislados","Juego"],["herramienta","Guía de acero para cable 30 m","Pieza"],["herramienta","Rotomartillo 1/2\"","Pieza"],
+  ["solar","Panel solar monocristalino 550 W","Pieza"],["solar","Microinversor","Pieza"],["solar","Cable fotovoltaico 10 AWG","Por metro"],["solar","Conector MC4","Par"],["solar","Luminaria solar para calle","Pieza"],["solar","Batería de respaldo","Pieza"],
+  ["ventilacion","Abanico de techo 52\" 5 aspas","Pieza"],["ventilacion","Abanico de techo con luz LED","Pieza"],["ventilacion","Extractor para baño","Pieza"],["ventilacion","Ventilador de pedestal","Pieza"],["ventilacion","Control de pared para abanico","Pieza"]
+].map((p,i)=>({id:"p"+i,cat:p[0],nombre:p[1],unidad:p[2]}));
+const MARCAS = ["Square D","Schneider Electric","Siemens","Eaton","Condumex","IUSA","Philips","Tecno Lite","Truper","Makita","Fiero","MAGG","Arrow Hart","Anclo","Bticino","Cooper","Voltech","Foset","3M","Fluidmaster","Megamex"];
+
+/* ================== IDIOMA ================== */
+const EN = {
+ "nav.productos":"Products","nav.cotizar":"Get a quote","nav.contratistas":"Contractors","nav.herramientas":"Calculators","nav.sucursales":"Stores","nav.historia":"About us",
+ "cta.lista":"Send your list","cta.cercana":"Nearest store",
+ "hero.titulo":"From our counter to your job site.","hero.sub":"Electrical supplies, lighting, hardware and plumbing since 1992. Send us your list on WhatsApp and get a quote today, with free delivery in town.",
+ "tablero.titulo":"Our stores, right now",
+ "promesa.1":"Serving electricians, contractors and homeowners in Mazatlán since 1992.","promesa.2t":"Free delivery","promesa.2":"We bring your materials to the job site or your home in town, within about 24 hours.","promesa.3t":"Quote today","promesa.3":"Send your list, a photo of your notes or your spreadsheet. Someone who knows will reply.",
+ "cat.titulo":"What you'll find at our counter","cat.lead":"Add what you need to your list and we'll send price and availability on WhatsApp.","cat.buscar":"Search: 12 AWG wire, breaker panel, LED bulb…","cat.pie":"Not on the list? Write it in your quote request: we carry thousands of low and high voltage products.",
+ "cot.titulo":"Send your list. Get your quote today.","cot.lead":"The way we've worked at the counter for 34 years, now from your phone.","cot.p1t":"Build your list","cot.p1":"From the catalog, typing it, or with a photo of your notes.","cot.p2t":"Pick your store","cot.p2":"The closest one or the one that always serves you.","cot.p3t":"Get your quote","cot.p3":"On WhatsApp or email, with availability and delivery time.",
+ "cot.form":"Your quote","cot.repetir":"Repeat my last list","cot.milista":"My list","cot.libre":"Anything else? Type or paste your list","cot.libreph":"E.g. 3 rolls 12 AWG red, 20 outlet boxes, 1 8-space panel…","cot.archivo":"Photo of your notes or spreadsheet (optional)","cot.sucursal":"Store","cot.nombre":"Your name","cot.eres":"You are","cot.t1":"Electrician or plumber","cot.t2":"Contractor or company","cot.t3":"Home or business","cot.entrega":"Delivery","cot.e1":"I'll pick it up","cot.e2":"Deliver to my site","cot.dir":"Neighborhood or job site location","cot.enviarWa":"Send on WhatsApp","cot.enviarMail":"Send by email",
+ "con.titulo":"For job sites that can't stop","con.lead":"Towers, housing, hotels and maintenance. One supplier in Mazatlán, Culiacán and Los Cabos.","con.b1t":"Job site delivery","con.b1":"Materials straight to your crew, free within town.","con.b2t":"Volume pricing","con.b2":"Send us the bill of materials for the whole project.","con.b3t":"Advice from day one","con.b3":"We help you choose materials before installing, to avoid rework and extra costs.","con.b4t":"Invoicing and nationwide shipping","con.b4":"We invoice and ship anywhere in Mexico with your preferred carrier.","con.cta":"Open a business account",
+ "her.titulo":"Do the math before you buy","her.lead":"Two calculations we're asked for every day at the counter. They're a quick reference; confirm the final installation with your electrician.",
+ "cal.titulo":"Which wire gauge do I need?","cal.lead":"Copper wire, single-phase circuit, 3% maximum voltage drop.","cal.carga":"Load (watts)","cal.dist":"Distance (meters)","cal.volt":"Voltage","cal.agregar":"Add this wire to my list","cal.nota":"Reference for THW wire at 75 °C. Check NOM-001-SEDE and a professional.",
+ "led.titulo":"How much do I save switching to LED?","led.lead":"Compare your current bulbs with equivalent LEDs.","led.n":"Number of bulbs","led.h":"Hours per day","led.w":"Current bulb","led.t":"Rate ($ per kWh)","led.nota":"Your exact rate is on your CFE bill. On the DAC rate you save more.",
+ "suc.titulo":"6 stores, one way of serving you","suc.cercana":"Find the nearest","suc.cercanaTxt":"We only use your location to calculate distance; we don't store it.",
+ "his.titulo":"Since 1992, growing with the region","his.lead":"We started with one counter in Mazatlán. Today we supply job sites in two states, with the same service.","his.1":"We open on División del Norte, Mazatlán.","his.2":"We reach Baja California Sur: San José del Cabo and Cabo San Lucas.","his.3":"We open in Culiacán.","his.4":"We grow in Mazatlán with Valle and Atlántico.","his.5":"Your counter, now on your phone too.","his.cita":"“Service, price and experience in one place.”","his.cita2":"We promised it in 1992 and we still deliver it at every counter.",
+ "marcas.titulo":"Brands we carry","pie.desc":"Electrical supplies, lighting, hardware and plumbing for your home, business or job site. Wholesale and retail since 1992.","pie.sitio":"Site","pie.aviso":"Privacy notice","pie.propuesta":"Redesign proposal · preview",
+ "mov.llamar":"Call","mov.sucursal":"Store","flot.ver":"View my list"
+};
+let lang = "es";
+const ES = {}; const ES_PH = {};
+document.querySelectorAll("[data-i18n]").forEach(el=>{ES[el.dataset.i18n]=el.innerHTML});
+document.querySelectorAll("[data-i18n-ph]").forEach(el=>{ES_PH[el.dataset.i18nPh]=el.placeholder});
+const t = (k)=> (lang==="en" && EN[k]) || ES[k] || k;
+const TX = {
+  es:{abierto:"Abierta",cerrado:"Cerrada",cierra:"Cierra",abre:"Abre",hoy:"hoy",manana:"mañana",resumen:(n)=>`${n} de 6 sucursales abiertas en este momento`,todas:"Todas",vacia:"Tu lista está vacía. Agrega productos del catálogo o escríbelos abajo.",sinRes:"No encontramos eso en el catálogo. Escríbelo en tu cotización y te decimos si lo tenemos.",anios:"años",wa:"WhatsApp",tel:"Llamar",ruta:"Cómo llegar",correo:"Correo",km:"km de ti",enviado:"Listo: abrimos WhatsApp con tu lista para la sucursal ",enviadoMail:"Listo: abrimos tu correo con la lista para la sucursal ",adjunta:"Al abrirse el chat, adjunta ahí tu archivo: ",faltaNombre:"Escribe tu nombre para que la sucursal sepa a quién responder.",faltaLista:"Tu lista está vacía: agrega productos o escríbelos.",geoNo:"No pudimos obtener tu ubicación. Elige tu ciudad abajo.",geoSi:(s,d)=>`Te queda más cerca ${s}, a ${d} km.`,calTxt:(i,a)=>`Corriente de ${i} A. Calibre mínimo por capacidad y caída de tensión: ${a} AWG.`,ledTxt:(k)=>`al año. Dejas de consumir ${k} kWh anuales.`,calNombre:(a)=>`Cable THW-LS cal. ${a}`,mensaje:"Hola, quiero cotizar este material",proximo:"Próximamente"},
+  en:{abierto:"Open",cerrado:"Closed",cierra:"Closes",abre:"Opens",hoy:"today",manana:"tomorrow",resumen:(n)=>`${n} of 6 stores open right now`,todas:"All",vacia:"Your list is empty. Add products from the catalog or type them below.",sinRes:"We couldn't find that in the catalog. Write it in your quote request and we'll tell you if we have it.",anios:"years",wa:"WhatsApp",tel:"Call",ruta:"Directions",correo:"Email",km:"km away",enviado:"Done: WhatsApp opened with your list for ",enviadoMail:"Done: your email opened with your list for ",adjunta:"When the chat opens, attach your file there: ",faltaNombre:"Add your name so the store knows who to reply to.",faltaLista:"Your list is empty: add products or type them.",geoNo:"We couldn't get your location. Pick your city below.",geoSi:(s,d)=>`Your nearest store is ${s}, ${d} km away.`,calTxt:(i,a)=>`Current: ${i} A. Minimum gauge for ampacity and voltage drop: ${a} AWG.`,ledTxt:(k)=>`per year. You stop using ${k} kWh a year.`,calNombre:(a)=>`THW-LS wire ${a} AWG`,mensaje:"Hi, I'd like a quote for these materials",proximo:"Coming soon"}
+};
+const tx = ()=>TX[lang];
+
+function aplicarIdioma(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{el.innerHTML = t(el.dataset.i18n)});
+  document.querySelectorAll("[data-i18n-ph]").forEach(el=>{el.placeholder = lang==="en" ? (EN[el.dataset.i18nPh]||ES_PH[el.dataset.i18nPh]) : ES_PH[el.dataset.i18nPh]});
+  document.getElementById("idioma").textContent = lang==="es" ? "EN" : "ES";
+  pintarCategorias(); pintarProductos(); pintarLista(); pintarTablero(); pintarSucursales(); calcCable(); calcLed(); pintarAnios();
+}
+document.getElementById("idioma").addEventListener("click",()=>{lang = lang==="es"?"en":"es"; guardar("e2h_lang",lang); aplicarIdioma()});
+
+/* ================== UTILIDADES ================== */
+function leer(k,def){try{const v=localStorage.getItem(k);return v?JSON.parse(v):def}catch(e){return def}}
+function guardar(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+const $ = (s)=>document.querySelector(s);
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+// Fotos faltantes => espacio marcado
+function marcarVacio(img){const s=img.closest(".slot"); if(s) s.classList.add("vacio")}
+function vigilarFotos(root=document){
+  root.querySelectorAll(".slot img").forEach(img=>{
+    if(img.dataset.v) return; img.dataset.v=1;
+    img.addEventListener("error",()=>marcarVacio(img));
+    img.addEventListener("load",()=>img.closest(".slot")?.classList.remove("vacio"));
+    if(!(img.complete && img.naturalWidth>0)) marcarVacio(img);
+  });
+}
+const logoImg = document.querySelector("#logo img");
+logoImg.addEventListener("error",()=>document.getElementById("logo").classList.add("sin-img"));
+if(logoImg.complete && logoImg.naturalWidth===0) document.getElementById("logo").classList.add("sin-img");
+
+/* ================== HORARIOS EN VIVO ================== */
+function ahoraLocal(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:ZONA,weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+  const g=(k)=>p.find(x=>x.type===k).value;
+  const dias={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+  let h=parseInt(g("hour"),10); if(h===24) h=0;
+  return {dia:dias[g("weekday")], min:h*60+parseInt(g("minute"),10), txt:`${String(h).padStart(2,"0")}:${g("minute")}`};
+}
+const aMin=(s)=>{const [h,m]=s.split(":").map(Number);return h*60+m};
+function estado(s){
+  const a=ahoraLocal(); const hoy=s.horario[a.dia];
+  if(hoy && a.min>=aMin(hoy[0]) && a.min<aMin(hoy[1])) return {abierto:true, txt:`${tx().cierra} ${hoy[1]}`};
+  for(let i=0;i<7;i++){
+    const d=(a.dia+i)%7, h=s.horario[d];
+    if(!h) continue;
+    if(i===0 && a.min<aMin(h[0])) return {abierto:false, txt:`${tx().abre} ${tx().hoy} ${h[0]}`};
+    if(i>0) return {abierto:false, txt:`${tx().abre} ${i===1?tx().manana:diaNombre(d)} ${h[0]}`};
+  }
+  return {abierto:false, txt:""};
+}
+function diaNombre(d){return new Intl.DateTimeFormat(lang==="en"?"en-US":"es-MX",{weekday:"long"}).format(new Date(2026,10,22+d))}
+
+let tableroListo=false;
+function pintarTablero(){
+  const cont=$("#pastillas"); const a=ahoraLocal();
+  $("#reloj").textContent = a.txt;
+  let abiertas=0;
+  cont.innerHTML = SUCURSALES.map(s=>{const e=estado(s); if(e.abierto) abiertas++;
+    return `<button type="button" class="pastilla ${e.abierto&&tableroListo?"on":""}" data-abierto="${e.abierto}" data-ir="${s.id}" aria-label="${esc(s.nombre)}: ${e.abierto?tx().abierto:tx().cerrado}. ${esc(e.txt)}">
+      <span class="palanca" aria-hidden="true"></span>
+      <b>${esc(s.corto)}</b>
+      <span>${esc(s.ciudad)}</span>
+      <span class="estado">${e.abierto?tx().abierto:tx().cerrado} · ${esc(e.txt)}</span></button>`}).join("");
+  $("#tableroResumen").textContent = tx().resumen(abiertas);
+  cont.querySelectorAll(".pastilla").forEach(b=>b.addEventListener("click",()=>irASucursal(b.dataset.ir)));
+}
+function encenderTablero(){
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const ps=[...document.querySelectorAll(".pastilla")];
+  if(reduce){tableroListo=true; ps.forEach(p=>{if(p.dataset.abierto==="true") p.classList.add("on")}); return}
+  ps.forEach((p,i)=>setTimeout(()=>{if(p.dataset.abierto==="true") p.classList.add("on"); if(i===ps.length-1) tableroListo=true},350+i*160));
+}
+setInterval(()=>{if(tableroListo) {pintarTablero(); pintarSucursales(true)}},30000);
+
+/* ================== CATÁLOGO + LISTA ================== */
+let catActiva="cable";
+let lista = leer("e2h_lista",[]); // [{nombre, unidad, cant}]
+function pintarCategorias(){
+  $("#categorias").innerHTML = CATEGORIAS.map((c,i)=>`<button type="button" class="cat" aria-pressed="${catActiva===c.id}" data-cat="${c.id}">
+    <div class="slot" data-label="Foto ${String(i+4).padStart(2,"0")} · 1:1"><img src="img/cat-${c.id}.jpg" alt="" loading="lazy"></div>
+    <span>${esc(c[lang])}</span></button>`).join("");
+  $("#categorias").querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{catActiva = catActiva===b.dataset.cat?null:b.dataset.cat; pintarCategorias(); pintarProductos()}));
+  vigilarFotos($("#categorias"));
+}
+const norm=(s)=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+function pintarProductos(){
+  const q=norm($("#buscar").value.trim());
+  const res=PRODUCTOS.filter(p=>(q||!catActiva||p.cat===catActiva) && (!q || q.split(/\s+/).every(w=>norm(p.nombre+" "+p.unidad+" "+CATEGORIAS.find(c=>c.id===p.cat).es).includes(w))));
+  $("#productos").innerHTML = res.length ? res.map(p=>{const en=lista.some(l=>l.nombre===p.nombre);
+    return `<div class="prod"><div><h3>${esc(p.nombre)}</h3><small>${esc(p.unidad)}</small></div>
+    <button type="button" class="agregar ${en?"en-lista":""}" data-p="${p.id}" aria-label="${en?"Quitar de":"Agregar a"} mi lista: ${esc(p.nombre)}">${en?"✓":"+"}</button></div>`}).join("")
+    : `<div class="sin-resultados">${tx().sinRes}</div>`;
+  $("#productos").querySelectorAll(".agregar").forEach(b=>b.addEventListener("click",()=>{
+    const p=PRODUCTOS.find(x=>x.id===b.dataset.p);
+    const i=lista.findIndex(l=>l.nombre===p.nombre);
+    if(i>=0) lista.splice(i,1); else lista.push({nombre:p.nombre,unidad:p.unidad,cant:1});
+    guardarLista(); pintarProductos();
+  }));
+}
+$("#buscar").addEventListener("input",pintarProductos);
+function guardarLista(){guardar("e2h_lista",lista); pintarLista()}
+function pintarLista(){
+  const ul=$("#miLista");
+  ul.innerHTML = lista.length ? lista.map((l,i)=>`<li><span>${esc(l.nombre)} <small style="color:var(--gris)">· ${esc(l.unidad)}</small></span>
+    <input type="number" min="1" value="${l.cant}" data-i="${i}" aria-label="Cantidad de ${esc(l.nombre)}">
+    <button type="button" data-q="${i}" aria-label="Quitar ${esc(l.nombre)}">×</button></li>`).join("")
+    : `<li class="vacia" style="display:block">${tx().vacia}</li>`;
+  ul.querySelectorAll("input").forEach(inp=>inp.addEventListener("change",()=>{lista[inp.dataset.i].cant=Math.max(1,parseInt(inp.value)||1); guardar("e2h_lista",lista)}));
+  ul.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{lista.splice(b.dataset.q,1); guardarLista(); pintarProductos()}));
+  document.querySelectorAll("[data-cuenta]").forEach(c=>c.textContent=lista.length);
+  $("#flotante").classList.toggle("visible", lista.length>0 && !(typeof enCotizar!=="undefined" && enCotizar));
+  $("#repetir").hidden = !(lista.length===0 && leer("e2h_ultima",[]).length);
+}
+$("#repetir").addEventListener("click",()=>{lista=leer("e2h_ultima",[]).map(x=>({...x})); guardarLista(); pintarProductos()});
+
+/* ================== COTIZADOR ================== */
+function llenarSelect(sel){sel.innerHTML = SUCURSALES.map(s=>`<option value="${s.id}">${esc(s.nombre)}</option>`).join("")}
+llenarSelect($("#sucursal"));
+const pref=leer("e2h_suc",null); if(pref) $("#sucursal").value=pref;
+$("#sucursal").addEventListener("change",e=>{guardar("e2h_suc",e.target.value); actualizarMovil()});
+document.querySelectorAll('input[name="entrega"]').forEach(r=>r.addEventListener("change",()=>{$("#campoDir").hidden = !document.querySelector('input[name="entrega"]:checked').value.startsWith("Entrega")}));
+$("#archivo").addEventListener("change",e=>{const f=e.target.files[0]; const n=$("#archivoNota"); if(f){n.hidden=false; n.textContent=tx().adjunta+f.name} else n.hidden=true});
+let via="wa";
+document.querySelectorAll('#formCot [type="submit"]').forEach(b=>b.addEventListener("click",()=>via=b.dataset.via));
+$("#formCot").addEventListener("submit",e=>{
+  e.preventDefault();
+  const aviso=$("#avisoOk"); const libre=$("#libre").value.trim(); const nombre=$("#nombre").value.trim();
+  if(!lista.length && !libre){aviso.hidden=false; aviso.textContent=tx().faltaLista; return}
+  if(!nombre){aviso.hidden=false; aviso.textContent=tx().faltaNombre; $("#nombre").focus(); return}
+  const s=SUCURSALES.find(x=>x.id===$("#sucursal").value);
+  const tipo=document.querySelector('input[name="tipo"]:checked').value;
+  const entrega=document.querySelector('input[name="entrega"]:checked').value;
+  const dir=$("#direccion").value.trim();
+  let msg=`${tx().mensaje} (sucursal ${s.nombre}):\n\n`;
+  lista.forEach(l=>msg+=`• ${l.cant} × ${l.nombre} (${l.unidad})\n`);
+  if(libre) msg+=`\n${libre}\n`;
+  msg+=`\nNombre: ${nombre}\nCliente: ${tipo}\nEntrega: ${entrega}${dir?" — "+dir:""}`;
+  const f=$("#archivo").files[0]; if(f) msg+=`\nAdjunto: ${f.name}`;
+  guardar("e2h_ultima",lista); guardar("e2h_suc",s.id);
+  if(via==="wa"){window.open(`https://wa.me/${s.whatsapp}?text=${encodeURIComponent(msg)}`,"_blank","noopener"); aviso.textContent=tx().enviado+s.nombre+"."+(f?" "+tx().adjunta+f.name:"")}
+  else {location.href=`mailto:${s.correo}?subject=${encodeURIComponent("Cotización — "+nombre)}&body=${encodeURIComponent(msg)}`; aviso.textContent=tx().enviadoMail+s.nombre+"."}
+  aviso.hidden=false;
+});
+
+/* ================== CONTRATISTAS ================== */
+$("#cuentaEmp").addEventListener("click",e=>{
+  e.preventDefault();
+  const s=SUCURSALES.find(x=>x.id===($("#sucursal").value||"matriz"));
+  const msg = lang==="en" ? "Hi, I'd like to open a business account with Eléctrica Dos Hermanos. Company:  / Project:  / Monthly volume: " : "Hola, quiero abrir una cuenta de empresa con Eléctrica Dos Hermanos. Empresa:  / Obra:  / Volumen mensual aproximado: ";
+  window.open(`https://wa.me/${s.whatsapp}?text=${encodeURIComponent(msg)}`,"_blank","noopener");
+});
+
+/* ================== CALCULADORAS ================== */
+// Sección (mm²) y ampacidad THW 75°C
+const AWG=[["14",2.08,20],["12",3.31,25],["10",5.26,35],["8",8.37,50],["6",13.3,65],["4",21.2,85],["2",33.6,115],["1/0",53.5,150],["2/0",67.4,175],["3/0",85.0,200],["4/0",107,230]];
+let calCalibre=null;
+function calcCable(){
+  const W=+$("#calCarga").value, L=+$("#calDist").value, V=+$("#calVolt").value;
+  if(!(W>0&&L>0)){$("#calRes").textContent="—";$("#calTxt").textContent="";calCalibre=null;return}
+  const I=W/V; const dV=0.03*V; const S=(2*L*I*0.0172)/dV; const Ireq=I*1.25;
+  const c=AWG.find(a=>a[1]>=S && a[2]>=Ireq);
+  calCalibre = c?c[0]:null;
+  $("#calRes").textContent = c ? c[0] : ">4/0";
+  $("#calTxt").textContent = c ? tx().calTxt(I.toFixed(1),c[0]) : (lang==="en"?"Above 4/0: ask us for a project review.":"Mayor a 4/0: pídenos una revisión de proyecto.");
+}
+["calCarga","calDist","calVolt"].forEach(id=>$("#"+id).addEventListener("input",calcCable));
+$("#calAgregar").addEventListener("click",()=>{if(!calCalibre) return; const n=tx().calNombre(calCalibre); if(!lista.some(l=>l.nombre===n)){lista.push({nombre:n,unidad:(lang==="en"?"meters":"metros"),cant:Math.ceil(+$("#calDist").value*2*1.1)}); guardarLista(); pintarProductos()} location.hash="#cotizar"});
+function calcLed(){
+  const n=+$("#ledN").value, h=+$("#ledH").value, [w0,w1]=$("#ledW").value.split("|").map(Number), tar=+$("#ledT").value;
+  if(!(n>0&&h>0&&tar>0)){$("#ledRes").textContent="—";$("#ledTxt").textContent="";return}
+  const kwh=n*(w0-w1)*h*365/1000; const ahorro=kwh*tar;
+  $("#ledRes").textContent = "$"+Math.round(ahorro).toLocaleString("es-MX");
+  $("#ledTxt").textContent = tx().ledTxt(Math.round(kwh).toLocaleString("es-MX"));
+}
+["ledN","ledH","ledW","ledT"].forEach(id=>$("#"+id).addEventListener("input",calcLed));
+
+/* ================== SUCURSALES ================== */
+const CIUDADES=["Mazatlán","Culiacán","Los Cabos"];
+let ciudadActiva="Mazatlán", destacada=null, distancias={};
+function pintarCiudades(){
+  $("#ciudades").innerHTML = CIUDADES.map(c=>`<button type="button" role="tab" aria-selected="${c===ciudadActiva}" data-c="${c}">${c}</button>`).join("");
+  $("#ciudades").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{ciudadActiva=b.dataset.c; pintarCiudades(); pintarSucursales()}));
+}
+function pintarSucursales(soloEstado){
+  if(soloEstado){document.querySelectorAll(".suc").forEach(el=>{const s=SUCURSALES.find(x=>x.id===el.dataset.id), e=estado(s); const st=el.querySelector(".suc-estado"); st.className="suc-estado"+(e.abierto?" abierto":""); st.querySelector("span").textContent=`${e.abierto?tx().abierto:tx().cerrado} · ${e.txt}`}); return}
+  const html = SUCURSALES.filter(s=>s.ciudad===ciudadActiva).map(s=>{const e=estado(s);
+    return `<article class="suc ${destacada===s.id?"destacada":""}" id="suc-${s.id}" data-id="${s.id}">
+      <div class="slot" data-label="Foto REAL · fachada ${esc(s.corto)}"><img src="img/suc-${s.id}.jpg" alt="Fachada de la sucursal ${esc(s.nombre)}" loading="lazy"></div>
+      <div class="suc-info">
+        <h3>${esc(s.nombre)}</h3>
+        <div class="suc-estado ${e.abierto?"abierto":""}"><i></i><span>${e.abierto?tx().abierto:tx().cerrado} · ${esc(e.txt)}</span></div>
+        ${distancias[s.id]!=null?`<div class="distancia">${distancias[s.id]} ${tx().km}</div>`:""}
+        <address>${esc(s.dir)}</address>
+        <div class="tels">${s.tels.map(tl=>`<a href="tel:+52${tl.replace(/\s/g,"")}">${tl}</a>`).join("")}<a href="mailto:${s.correo}" style="font-weight:500;color:var(--gris)">${s.correo}</a></div>
+        <div class="suc-acc">
+          <a class="btn btn-azul" href="https://wa.me/${s.whatsapp}?text=${encodeURIComponent(tx().mensaje+" — "+s.nombre)}" target="_blank" rel="noopener">${tx().wa}</a>
+          <a class="btn btn-linea" href="https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}" target="_blank" rel="noopener">${tx().ruta}</a>
+        </div>
+      </div>
+      <div class="suc-mapa"><iframe src="${s.mapa}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa ${esc(s.nombre)}" allowfullscreen></iframe></div>
+    </article>`}).join("");
+  $("#sucLista").innerHTML=html; vigilarFotos($("#sucLista"));
+}
+function irASucursal(id){const s=SUCURSALES.find(x=>x.id===id); ciudadActiva=s.ciudad; destacada=id; pintarCiudades(); pintarSucursales(); $("#sucursal").value=id; guardar("e2h_suc",id); actualizarMovil(); document.getElementById("suc-"+id).scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"})}
+function haversine(a,b,c,d){const R=6371,r=Math.PI/180,x=Math.sin((c-a)*r/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin((d-b)*r/2)**2;return 2*R*Math.asin(Math.sqrt(x))}
+function buscarCercana(){
+  const txt=$("#cercanaTxt");
+  if(!navigator.geolocation){txt.textContent=tx().geoNo;return}
+  navigator.geolocation.getCurrentPosition(pos=>{
+    const {latitude:la,longitude:lo}=pos.coords;
+    SUCURSALES.forEach(s=>distancias[s.id]=Math.round(haversine(la,lo,s.lat,s.lng)*10)/10);
+    const m=SUCURSALES.reduce((a,b)=>distancias[a.id]<=distancias[b.id]?a:b);
+    txt.textContent=tx().geoSi(m.nombre,distancias[m.id]); irASucursal(m.id);
+  },()=>{txt.textContent=tx().geoNo},{timeout:8000,maximumAge:600000});
+}
+$("#btnCercana").addEventListener("click",buscarCercana);
+document.querySelector("[data-cercana-btn]").addEventListener("click",e=>{e.preventDefault(); location.hash="#sucursales"; buscarCercana()});
+
+/* ================== VARIOS ================== */
+function pintarAnios(){const n=new Date().getFullYear()-1992; $("#anios").textContent=`${n} ${tx().anios}`; $("#anioPie").textContent=new Date().getFullYear()}
+$("#marcas").innerHTML = MARCAS.map(m=>`<li>${esc(m)}</li>`).join("");
+const pieL=(est)=>SUCURSALES.filter(s=>est==="BCS"?s.estado==="BCS":s.estado!=="BCS").map(s=>`<li><a href="#suc-${s.id}" data-ir="${s.id}">${esc(s.nombre)}</a> · <a href="tel:+52${s.tels[0].replace(/\s/g,"")}">${s.tels[0]}</a></li>`).join("");
+$("#pieSin").innerHTML=pieL("SIN"); $("#pieBcs").innerHTML=pieL("BCS");
+document.querySelectorAll(".pie [data-ir]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault(); irASucursal(a.dataset.ir)}));
+function actualizarMovil(){const s=SUCURSALES.find(x=>x.id===($("#sucursal").value||"matriz")); $("#movWa").href=`https://wa.me/${s.whatsapp}?text=${encodeURIComponent(tx().mensaje)}`; $("#movTel").href=`tel:+52${s.tels[0].replace(/\s/g,"")}`}
+$("#menuBtn").addEventListener("click",()=>{const n=$("#nav"); const ab=n.classList.toggle("abierto"); $("#menuBtn").setAttribute("aria-expanded",ab)});
+$("#nav").addEventListener("click",e=>{if(e.target.tagName==="A"){$("#nav").classList.remove("abierto");$("#menuBtn").setAttribute("aria-expanded","false")}});
+
+// Datos estructurados para Google (una ficha por sucursal)
+const ld={"@context":"https://schema.org","@type":"Organization","name":"Eléctrica Dos Hermanos S.A. de C.V.","url":"https://www.electricadoshermanos.com","foundingDate":"1992","logo":"https://www.electricadoshermanos.com/img/logo-e2h.png",
+  "department":SUCURSALES.map(s=>({"@type":"HardwareStore","name":"Eléctrica Dos Hermanos — "+s.nombre,"telephone":"+52 "+s.tels[0],"email":s.correo,"address":{"@type":"PostalAddress","streetAddress":s.dir,"addressCountry":"MX"},"geo":{"@type":"GeoCoordinates","latitude":s.lat,"longitude":s.lng},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"14:00"}]}))};
+const sc=document.createElement("script"); sc.type="application/ld+json"; sc.textContent=JSON.stringify(ld); document.head.appendChild(sc);
+
+// Ocultar "Ver mi lista" cuando ya estás en el cotizador
+let enCotizar=false;
+new IntersectionObserver(es=>{enCotizar=es[0].isIntersecting; $("#flotante").classList.toggle("visible", lista.length>0 && !enCotizar)},{threshold:.15}).observe($("#cotizar"));
+
+/* ================== ARRANQUE ================== */
+lang = leer("e2h_lang","es");
+pintarCiudades(); aplicarIdioma(); actualizarMovil(); vigilarFotos(); encenderTablero();
+</script>
+</body>
+</html>

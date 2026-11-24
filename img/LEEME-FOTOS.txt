@@ -1,0 +1,18 @@
+Pon aquí las fotos con estos nombres exactos (jpg). Si falta una, el sitio muestra su espacio marcado.
+
+logo-e2h.png, logo-e2h-mark.png, favicon ... ya incluidos (pedir el vector original para la versión final)
+01-hero.jpg ............. 16:9  electricista en obra frente al mar
+02-entrega-obra.jpg ..... 16:9  pickup descargando material
+03-contratistas.jpg ..... 16:9  libreta de lista y celular
+cat-cable.jpg ........... 1:1   foto 04
+cat-proteccion.jpg ...... 1:1   foto 05
+cat-iluminacion.jpg ..... 1:1   foto 06
+cat-canalizacion.jpg .... 1:1   foto 07
+cat-plomeria.jpg ........ 1:1   foto 08
+cat-herramienta.jpg ..... 1:1   foto 09
+cat-solar.jpg ........... 1:1   foto 10
+cat-ventilacion.jpg ..... 1:1   foto 11
+12-centro-tecnico.jpg ... 16:9
+13-solar.jpg ............ 16:9
+real-mostrador.jpg ...... foto REAL de mostrador y equipo
+suc-matriz.jpg, suc-valle.jpg, suc-atlantico.jpg, suc-culiacan.jpg, suc-sjc.jpg, suc-csl.jpg  fachadas REALES
