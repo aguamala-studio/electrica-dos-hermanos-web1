@@ -78,6 +78,7 @@ section{padding:96px 0;scroll-margin-top:72px}
 /* Espacios de foto */
 .slot{position:relative;background:var(--concreto-2);overflow:hidden}
 .slot img{width:100%;height:100%;object-fit:cover}
+.hero-foto img{position:absolute;inset:0;object-position:70% center}
 .slot.vacio img{display:none}
 .slot.vacio::after{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;font-family:var(--display);font-weight:600;font-size:1rem;color:var(--gris);background:repeating-linear-gradient(-45deg,var(--concreto) 0 14px,var(--concreto-2) 14px 28px)}
 
@@ -108,7 +109,7 @@ section{padding:96px 0;scroll-margin-top:72px}
 .hero h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.92;margin-bottom:24px}
 .hero p{font-size:1.2rem;max-width:34ch;color:#DCE8F5;margin-bottom:32px}
 .hero .acciones{display:flex;flex-wrap:wrap;gap:14px}
-.hero-foto{position:relative;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
+.hero-foto{position:relative;min-height:100%;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
 .hero-foto.slot{background:var(--azul-hondo)}
 .hero-foto.slot.vacio::after{padding-left:22%;background:repeating-linear-gradient(-45deg,#0d66bf 0 14px,#0b5aa9 14px 28px);color:#cfe0f2}
 
